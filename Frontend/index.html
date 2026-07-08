@@ -1,0 +1,117 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Notes Summarizer</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+
+            <div>
+                <h1>🤖 AI Notes Summarizer</h1>
+                <p class="subtitle">
+                    Paste your notes and let AI convert them into short, easy-to-read summaries.
+                </p>
+            </div>
+
+            <button id="themeToggle" title="Toggle Theme">
+                🌙
+            </button>
+
+        </div>
+
+        <!-- Notes -->
+        <textarea
+            id="notes"
+            maxlength="5000"
+            placeholder="Paste your study notes here..."></textarea>
+
+        <!-- Character Counter -->
+        <div class="counter">
+            <span id="charCount">0</span> / 5000 Characters
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+
+            <button id="summarize">
+                ✨ Summarize
+            </button>
+
+            <button id="clear">
+                🗑 Clear
+            </button>
+
+        </div>
+
+        <!-- Loading -->
+        <div class="loading" id="loading">
+
+            <div class="spinner"></div>
+
+            <p>Generating Summary...</p>
+
+        </div>
+
+        <!-- Output -->
+        <div class="output">
+
+            <div class="outputHeader">
+
+                <h2>Summary</h2>
+
+                <button id="copy">
+                    📋 Copy
+                </button>
+
+            </div>
+
+            <div id="result">
+                Your summarized notes will appear here.
+            </div>
+
+            <button id="downloadPdf">
+                📄 Download PDF
+            </button>
+
+        </div>
+        <footer class="footer">
+            <p>&copy; 2026 AI Notes Summarizer | Developed by Avanish Maurya</p>
+        </footer>  
+
+    </div>
+
+    
+
+    <!-- Toast -->
+    <div id="toast"></div>
+
+   <!-- jsPDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+     
+
+</body>
+
+</html>
