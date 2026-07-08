@@ -127,7 +127,7 @@ summarize.addEventListener("click", async () => {
 
     try {
 
-        const response = await fetch("http://localhost:5000/api/summarize", {
+        const response = await fetch("https://ai-notes-summarizer-4b71.onrender.com/api/summarize", {
 
             method: "POST",
 
