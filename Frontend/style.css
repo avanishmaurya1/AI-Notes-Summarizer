@@ -350,3 +350,50 @@ button:disabled{
     font-size: 0.9rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1); /* Halka sa separator line */
 }
+/* Footer */
+
+.footer{
+    margin-top:40px;
+    padding:25px 20px;
+    background:#111827;
+    color:#fff;
+    text-align:center;
+    border-radius:12px;
+}
+
+.footer p{
+    margin-bottom:15px;
+    font-size:16px;
+}
+
+.developer-links{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.developer-links span{
+    width:100%;
+    margin-bottom:10px;
+    font-size:18px;
+    font-weight:600;
+}
+
+.developer-links a{
+    color:#f8fafc;
+    text-decoration:none;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.developer-links a i{
+    margin-right:6px;
+    font-size:18px;
+}
+
+.developer-links a:hover{
+    color:#38bdf8;
+    transform:translateY(-2px);
+}
